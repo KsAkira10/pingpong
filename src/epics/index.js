@@ -1,1 +1,2 @@
-export { pingpongEpic } from './pingpongEpic';
+export { pingpongEpic } from "./pingpongEpic";
+export { fetchUserEpic } from "./fetchUserEpic";

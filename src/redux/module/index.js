@@ -1,12 +1,14 @@
 import { combineEpics } from 'redux-observable';
 import { combineReducers } from 'redux';
-import { pingpongEpic } from '../../epics'
-import { pingpongReducer } from '../../reducers'
+import { pingpongEpic, fetchUserEpic } from '../../epics'
+import { pingpongReducer, users } from '../../reducers'
 
 export const rootEpic = combineEpics(
-  pingpongEpic
+  pingpongEpic,
+  fetchUserEpic,
 );
 
 export const rootReducer = combineReducers({
   pingpongReducer,
+  users
 });

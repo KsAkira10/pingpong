@@ -1,1 +1,2 @@
-export { pingpongReducer } from './pingpongReducer';
+export { pingpongReducer } from "./pingpongReducer";
+export { users } from "./fetchUserReducer";
